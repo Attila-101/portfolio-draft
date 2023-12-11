@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  font-size: 1rem;
+  transition: all 200ms;
+}
+
+.btn[disabled] {
+  opacity: 0.65;
+}
+
+.btn-string {
+  padding: 0.5rem;
+}
+
+.btn-non-string {
+  padding: 0.2rem;
+}
+
+.btn-string:not([disabled]):hover {
+  transform: translate(-4px, -4px);
+  box-shadow: #fdc500 4px 4px 0 1px;
+}
+
+.btn-string:not([disabled]):active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.btn-non-string:not([disabled]):hover {
+  transform: translate(-2px, -2px);
+  box-shadow: #fdc500 2px 2px 0 1px;
+}
+
+.btn-non-string:not([disabled]):active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.nav:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: #fdc500 2px 2px 0 1px;
+}
