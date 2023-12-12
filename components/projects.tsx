@@ -13,7 +13,7 @@ export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.2);
 
   return (
-    <section className="lg:mb-4 scroll-mt-28" id="projects" ref={ref}>
+    <section className="mx-2 lg:mb-4 scroll-mt-28" id="projects" ref={ref}>
       <motion.div
         initial={{
           opacity: 0,
@@ -303,7 +303,7 @@ export default function Projects() {
           </section>
         </div>
         <div className="flex text-centr justify-center">
-          <Button link={"archive"}>Project Archive</Button>
+          <Button link={"archive"}>More Projects</Button>
         </div>
       </section>
     </section>

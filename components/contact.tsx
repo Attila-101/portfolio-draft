@@ -4,11 +4,9 @@ import { sendEmail } from "@/actions/sendEmail";
 import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import toast from "react-hot-toast";
-import { PiPaperPlaneTilt } from "react-icons/pi";
 import SubmitBtn from "./submit-btn";
 import SectionHeading from "./section-heading";
 import Button from "./button";
-import { AiOutlineMail } from "react-icons/ai";
 import { RiLinkedinLine } from "react-icons/ri";
 import { FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
@@ -30,7 +28,7 @@ export default function Contact() {
       viewport={{
         once: true,
       }}
-      className="lg:w-[56rem] mb-28"
+      className="mx-2 w-full lg:w-[56rem] mb-28"
       id="contact"
       ref={ref}
     >
@@ -78,7 +76,7 @@ export default function Contact() {
           maxLength={1000}
         />
         <div className="h-10"></div>
-        <div className="flex text-centr justify-center">
+        <div className="flex text-center justify-center">
           <SubmitBtn />
         </div>
       </form>

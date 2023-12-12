@@ -23,13 +23,13 @@ export default function Skills() {
       viewport={{
         once: true,
       }}
-      className="mb-16 lg:w-[56rem] lg:mb-28 scroll-mt-28"
+      className="mx-2 mb-16 lg:w-[56rem] lg:mb-28 scroll-mt-28"
       id="skills"
       ref={ref}
     >
       <SectionHeading>Skills</SectionHeading>
-      <div className="lg:flex lg:justify-between mb-16">
-        <ul className="leading-8">
+      <div className="mb-16">
+        <ul className="leading-8 grid grid-cols-2 grid-rows-10 gap-x-4 ml-4 lg:grid-cols-5 lg:grid-rows-4 lg:justify-between">
           <li>
             <span className="text-secondary">◼</span>&ensp; JavaScript
           </li>
@@ -40,10 +40,9 @@ export default function Skills() {
             <span className="text-secondary">◼</span>&ensp; GraphQL
           </li>
           <li>
-            <span className="text-secondary">◼</span>&ensp; Phyton
+            <span className="text-secondary">◼</span>&ensp; Python
           </li>
-        </ul>
-        <ul className="leading-8">
+
           <li>
             <span className="text-secondary">◼</span>&ensp; HTML
           </li>
@@ -56,8 +55,7 @@ export default function Skills() {
           <li>
             <span className="text-secondary">◼</span>&ensp; Next.js
           </li>
-        </ul>
-        <ul className="leading-8">
+
           <li>
             <span className="text-secondary">◼</span>&ensp; ReactNative
           </li>
@@ -70,8 +68,7 @@ export default function Skills() {
           <li>
             <span className="text-secondary">◼</span>&ensp; Vercel
           </li>
-        </ul>
-        <ul className="leading-8">
+
           <li>
             <span className="text-secondary">◼</span>&ensp; Heroku
           </li>
@@ -84,8 +81,7 @@ export default function Skills() {
           <li>
             <span className="text-secondary">◼</span>&ensp; Docker
           </li>
-        </ul>
-        <ul className="leading-8">
+
           <li>
             <span className="text-secondary">◼</span>&ensp; Prismic
           </li>

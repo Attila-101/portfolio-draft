@@ -78,7 +78,7 @@ export default function Intro() {
             link={"#about"}
             extraClassName={"hidden  lg:flex lg:absolute lg:bottom-2"}
           >
-            Discover More
+            Read More
           </Button>
         </motion.div>
         <motion.div
