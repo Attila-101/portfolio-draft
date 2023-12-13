@@ -13,8 +13,10 @@ const bitter = Bitter({
 });
 
 export const metadata = {
-  title: "Attila | Portfolio",
+  title: "Attila - Full Stack Developer",
   description: "Attila is a full-stack developer",
+  name: "robots",
+  content: "noindex",
 };
 
 export default function RootLayout({

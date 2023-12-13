@@ -7,8 +7,10 @@ const bitter = Bitter({
 });
 
 export const metadata = {
-  title: "Attila | Portfolio",
-  description: "Attila is a full-stack developer",
+  title: "Archive | Attila Balatoni",
+  description: "Project Archive",
+  name: "robots",
+  content: "noindex",
 };
 
 export default function RootLayout({
