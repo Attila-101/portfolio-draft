@@ -1,9 +1,52 @@
 import React from "react";
-import { archiveData } from "@/lib/data";
+
 import Link from "next/link";
 import Button from "./button";
 
 export default function ProjectArchive() {
+  const archiveData = [
+    {
+      projectName: "Personal Portfolio",
+      tech: "Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting",
+      link: "attila.dev",
+    },
+    {
+      projectName: "E-commerce website",
+      tech: "WordPress, PHP, WooCommerce, CSS",
+      link: "gullfoss.is",
+    },
+    {
+      projectName: "Annual Report - Built at Kolibri digital agency",
+      tech: "Next.js, TypeScript, SCSS, GraphQL, Prismic, Framer Motion",
+      link: "arsskyrsla-2021.lifbru.is",
+    },
+    {
+      projectName: "Workshop",
+      tech: "Next.js, Heroku",
+      link: "nextjs-rendering-phi.vercel.app",
+    },
+    {
+      projectName: "Community Platform",
+      tech: "WordPress, BuddyBoss",
+      link: "birdsface.com",
+    },
+    {
+      projectName: "Property Market Data visualization",
+      tech: "React, Microsoft Power BI",
+      link: "fasti.is",
+    },
+    {
+      projectName: "Internship project",
+      tech: "Next.js, TypeScript, SCSS, Prismic, GraphQL",
+      link: "gefn-website.vercel.app",
+    },
+    {
+      projectName: "Searchable database of street art in Reykjavik",
+      tech: "Next.js, GraphCMS, MapBox",
+      link: "reykjavikstreet.art",
+    },
+  ];
+
   return (
     <section className="md:w-[67.5rem] justify-center items-center mb-12 xl:mb-56">
       <div className="md:flex mb-12">
@@ -44,9 +87,18 @@ export default function ProjectArchive() {
                   {item.tech}
                 </td>
                 <td className="hidden md:table-cell px-6 py-4 whitespace-nowrap text-sm dark:text-white">
-                  <Link href={`https://${item.link}`} target="_blank">
-                    {item.link}
-                  </Link>
+                  {index === 0 ? (
+                    <Link
+                      href={`https://github.com/Attila-101/portfolio-draft`}
+                      target="_blank"
+                    >
+                      {item.link}
+                    </Link>
+                  ) : (
+                    <Link href={`https://${item.link}`} target="_blank">
+                      {item.link}
+                    </Link>
+                  )}
                 </td>
               </tr>
             ))}
