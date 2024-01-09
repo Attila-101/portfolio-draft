@@ -22,7 +22,7 @@ export default function ProjectArchive() {
     },
     {
       projectName: "Workshop",
-      tech: "Next.js, Heroku",
+      tech: "Next.js, Heroku, Vercel",
       link: "nextjs-rendering-phi.vercel.app",
     },
     {
